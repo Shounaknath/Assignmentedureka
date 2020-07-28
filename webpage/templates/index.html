@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  
+<style>
+  #drop_query_btn{
+    margin-left: 85%;
+    bottom: 0;
+    right: 0;
+
+  }
+  .hover_btn{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+  .hover_btn:hover {
+    background-color: #3e8e41
+
+  }
+
+  .hover_btn:active {
+
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+
+}
+
+  .flex-container {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.flex-container > button {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 30px;
+  text-align: center;
+  line-height: 95px;
+  font-size: 17px;
+  border: none;
+}
+
+</style>
+
+
+</head>
+
+
+<body >
+
+ <!----------------------   NavBar ----------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Edureka..</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Corporate Traning <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Course</a> 
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">Blog </a>
+        <
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Login</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+   <!-----------  Gride Button  ------------------>
+
+<section>
+<div class="flex-container">
+  <button class="hover_btn"> <div>BECOME A <b>DEVOPS ENGINEER</b></div></button> 
+  <button class="hover_btn"><div>BECOME A <b>BIG DATA ARCHITEC</b></div></button> 
+  <button class="hover_btn"><div>BECOME A <b>DATA SCIENCEC</b></div></button> 
+</div>
+</section>
+
+<!----------------------- Slider  ----------------->
+
+  <h1>Tranding course</h1>
+
+<section>
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="inam" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-lg-4 my-2">
+                  <div class="card" style="width: 300px;margin: auto;">
+                    <img src="{% static 'aiml.png' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">AI & Machine Learning</h4>
+                      <button type="button" class="btn btn-warning">View More</button>  
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'Python.png'%}" class="card-img-top">
+                    <div class="card-body">
+                    <h4 class="card-title">Python Certificate Training for Data Sci..</h4>
+                      <button type="button" class="btn btn-warning">View More</button>  
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'devops.png'%}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Devops Certification Training</h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                    </div>  
+                  </div>
+                 </div>
+
+                 <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;margin: auto;">
+                    <img src="{% static 'aws.png'%}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">AWS Architect Certificate Training </h4>
+                      <button type="button" class="btn btn-warning">View More</button> 
+                    </div>
+                  </div> 
+                </div>
+                
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'bd.jfif' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Big Data Haddop Certification Training </h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                 <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'project.png' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">PMP Certificate Exam Training</h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                
+              </div>
+              
+             </div>
+
+            
+          </div>
+          <div class="carousel-item">
+             <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-lg-4 my-2">
+                  <div class="card" style="width: 300px;margin: auto;">
+                    <img src="{% static 'power.png' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Microsoft Power Bl Training </h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                      <img src="{% static 'azure.png' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Microsoft CERTIFIED Expert: Azure Sloutions </h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'cyber.jfif' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Cybersecurity Certification Course</h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'java.png' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">JAVA Certification Course</h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'data.jpg' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">Data Science Training Course</h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card" style="width: 300px;">
+                    <img src="{% static 'py.jfif' %}" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title">PYTHON Certification Training</h4>
+                      <button type="button" class="btn btn-warning">View More</button>
+                      
+                    </div>
+                    
+                  </div>
+              </div>  
+             </div>
+          </div> 
+        </div>
+        <a href="#inam" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#inam" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>  
+      </div>  
+    </div>    
+  </div> 
+</div>
+</section>
+
+
+<!--- --------------          Drop Query Button        ---------------->
+<section >
+  <div class="container">
+   <!-- Button to Open the Modal -->
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="drop_query_btn" >
+         Drop us a Query
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+       
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Drop us a Query</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <form method="post" action="">
+          {% csrf_token %}
+
+           <div class="form-group">
+             <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+           </div>
+           <div class="form-group">
+              <input type="phone" class="form-control" placeholder="Enter phone " id="phone" name="phone">
+           </div>
+           <div class="form-group ">
+              <label for="desc"> Type Your Query</label>
+              <textarea class="form-control" placeholder="Enter Your Query" rows="3" id="desc" name="desc" > </textarea>
+           </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+</section>
+
+
+
+</div>
+</body>
+</html>
